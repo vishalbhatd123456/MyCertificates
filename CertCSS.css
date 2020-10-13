@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Chelsea+Market&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+
+
+body {
+    
+}
+#text{
+    text-align:center;
+    font-size:35px;
+    font-family: 'Chelsea Market', cursive;
+}
+.main{
+    height:70vw;
+    width:95%;
+    top:calc(60vh - 35vw) !important;
+    background-color:none;
+    position:fixed;
+    left:calc(50vw - 47.5);
+}
+.swiper-container{ 
+    width: 100%; 
+    height: 65vw;
+}
+.swiper-slide{
+    background-color:none;
+    background-size:cover;
+}
+
+.swiper-slide:nth-child(1){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/Python_certificate.jpg");
+}
+
+.swiper-slide:nth-child(2){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/Ruby_certificate.jpg");
+}
+
+.swiper-slide:nth-child(3){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/SQL_certificate.jpg");
+}
+
+.swiper-slide:nth-child(4){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/Swift_certificate.jpg");
+}
+
+.swiper-slide:nth-child(5){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/data-science_certificate.jpg");
+}
+
+.swiper-slide:nth-child(6){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/fullstack_certificate.jpg");
+}
+
+.swiper-slide:nth-child(7){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/jQuery_certificate.jpg");
+}
+
+.swiper-slide:nth-child(8){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/machine-learning_certificate.jpg");
+}
+
+.swiper-slide:nth-child(9){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/react_certificate.jpg");
+}
+
+.swiper-slide:nth-child(10){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/CSharp_certificate.jpg");
+}
+
+.swiper-slide:nth-child(11){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/C_certificate.jpg");
+}
+
+.swiper-slide:nth-child(12){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/HTML_certificate.jpg");
+}
+
+.swiper-slide:nth-child(13){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/JavaScript_certificate.jpg");
+}
+
+.swiper-slide:nth-child(14){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/Java_certificate.jpg");
+}
+
+.swiper-slide:nth-child(15){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/PHP_certificate.jpg");
+}
+
+.swiper-slide:nth-child(16){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/CSS_certificate.jpg");
+}
+
+.swiper-slide:nth-child(17){
+    background-image:url("https://raw.githubusercontent.com/ayushkumarsingh2422005/AboutMe/main/CPlusPlus_certificate.jpg");
+}
+
+/*-------------------------loader code  -------------*/
+
+.loader_container{
+    position:fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    background-color:black;
+}
+.loader_sub{
+    height:150px;
+    width:150px;
+    background-color:transparent;
+    margin-top:calc(50vh - 150px);
+    margin-left:calc(50vw - 75px);
+    position:relative;
+}
+.loader_sub > div{
+    height:5px;
+    width:150px;
+    position:absolute;
+    bottom:0;
+    border-radius:50px;
+    animation:animate1 1s ease-out infinite;
+    background:linear-gradient(90deg, transparent ,#8DF3FF);
+    background-repeat:no-repeat;
+}
+.loader_s > div{
+    height:4px !important;
+    width:130px !important;
+}
+#loader_1{
+    transform-origin:50% 50%;
+    transform:rotate(180deg);
+}
+#loader_2{
+    transform:rotate(-60deg);
+    transform-origin:0% 50%;
+}
+#loader_3{
+    transform:rotate(60deg);
+    transform-origin:100% 50%;
+}
+
+@keyframes animate1{
+    0%{
+        background-size:0% 100%;
+    }
+    100%{
+        background-size:100% 100%;
+    }
+    
+}
+.loader_text{
+    height:20px;
+    width:100vw;
+    background-color:none;
+    position:fixed;
+    margin-top:50px;
+    text-align:center;
+    font-size:30px;
+    letter-spacing:5px;
+}
+.loader_text::before{
+    color:white;
+    content:"Loading";
+    animation:animate2 2s infinite;
+}
+
+@keyframes animate2{
+    0%{
+        content:"Loading";
+    }
+    25%{
+        content:"Loading.";
+    }
+    50%{
+        content:"Loading..";
+    }
+    75%{
+        content:"Loading...";
+    }
+    100%{
+        content:"Loading...";
+    }
+    
+}
